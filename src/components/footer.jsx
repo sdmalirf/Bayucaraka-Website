@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon1 from "../assets/vector-4.svg";
 import icon2 from "../assets/vector-1.svg";
 import icon3 from "../assets/vector-2.svg";
 import icon4 from "../assets/vector-3.svg";
@@ -120,7 +119,7 @@ export default function Footer() {
               href="#"
               className="bg-gray-700 rounded-full w-10 h-10 flex items-center justify-center text-blue-500"
             >
-              <img src={icon1} alt="" />
+              <img src={icon2} alt="" />
             </a>
             <a
               href="#"
