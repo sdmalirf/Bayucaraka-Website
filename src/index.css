@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins';
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,3 +18,60 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@keyframes customBounce {
+  0%, 10% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 0.8;
+   
+  }
+}
+
+.animate-custom-bounce img {
+  animation: customBounce 1.2s ease-in-out infinite;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+/* .slider-controler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .slider-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+ }
+ 
+ .slider-arrow:hover {
+  background: rgba(255, 255, 255, 1);
+ } */
+ 
+ .swiper-pagination {
+  margin-top: 100px;
+ }
+
+ .swiper-wrapper {
+  transition-timing-function: linear;
+  }
+
