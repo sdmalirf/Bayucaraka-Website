@@ -8,7 +8,7 @@ import AchievmentsSection from "./components/AchiementsSection/achievments";
 import Question from "./components/FAQSection/question";
 import ContactSection from "./components/ContactSection/contact";
 import SponsorsSection from "./components/sponsorSection/sponsors";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 
 export default function LandingPage() {
   return (
@@ -22,7 +22,7 @@ export default function LandingPage() {
       <Question />
       <ContactSection />
       <SponsorsSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
