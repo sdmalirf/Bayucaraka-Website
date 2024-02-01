@@ -1,5 +1,5 @@
 import React from "react"; // Don't forget to import React
-import firaWinnerImage from "../../assets/firaWinner-image.jpg";
+import firaWinnerImage from "../../assets/firawinner-image.jpg";
 
 const CardAchievement = () => {
   return (

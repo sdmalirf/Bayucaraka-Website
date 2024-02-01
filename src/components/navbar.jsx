@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import logoBayucaraka from "../assets/bayucarakaLogoDark.svg";
+import chevron from "../assets/chevron.svg";
 import logoBayucarakawhite from "../assets/bayucarakaLogo.svg";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 400);
+      setIsScrolled(scrollPosition > 660);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,22 +23,18 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`w-full px-14 flex justify-between items-center fixed z-20 top-0 ${
+      className={`w-full px-14 py-2 flex justify-between items-center fixed z-20 top-0 max-lg:px-6 ${
         isScrolled
-          ? "bg-white text-gray-700 transition-all duration-2000 ease-in-out fill-white"
-          : "text-white"
+          ? "bg-slate-950 text-white transition-all duration-2000 ease-in-out fill-white"
+          : "text-white max-lg:bg-slate-950"
       }`}
     >
       <div className="left">
         <Link to="/">
-          <img
-            src={isScrolled ? logoBayucaraka : logoBayucarakawhite}
-            alt=""
-            className="w-14"
-          />
+          <img src={logoBayucarakawhite} alt="" className="w-14" />
         </Link>
       </div>
-      <div className="right flex gap-8">
+      <div className="right flex gap-8 items-center max-lg:hidden">
         <NavLink
           className={`font-medium text-md ${location.pathname.includes("/")}`}
           activeClassName={`font-semibold text-base ${
@@ -49,13 +45,16 @@ const Navbar = () => {
           About Us
         </NavLink>
         <NavLink
-          className={`font-medium text-md ${location.pathname.includes("/")}`}
+          className={`font-medium text-md flex items-center ${location.pathname.includes(
+            "/"
+          )}`}
           activeClassName={`font-semibold text-base ${
             location.pathname.includes("/divison") && "text-gray-100"
           }`}
           to="/divison"
         >
           Divison
+          <img src={chevron} alt="" className="fill-white" />
         </NavLink>
         <NavLink
           className={`font-medium text-md ${location.pathname.includes("/")}`}
