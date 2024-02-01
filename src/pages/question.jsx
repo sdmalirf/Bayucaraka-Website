@@ -1,5 +1,5 @@
 import React from "react";
-import DisclosureQuestions from "./disclosure";
+import DisclosureQuestions from "../components/disclosure";
 
 export default function Question() {
   return (

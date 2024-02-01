@@ -3,7 +3,7 @@ import instagramIcon from "../../assets/instagram.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import emailIcon from "../../assets/Email.svg";
 import youtubeIcon from "../../assets/youtube.svg";
-import MapGoogle from "./map";
+import MapGoogle from "../components/map";
 
 export default function ContactSection() {
   return (

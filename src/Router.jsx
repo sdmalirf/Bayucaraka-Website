@@ -3,9 +3,8 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import LandingPage from "./landingPage";
-import AboutSection from "./components/AboutSection/aboutSection";
-import ComingSoon from "./components/404";
+import LandingPage from "./pages/landingPage";
+import ComingSoon from "./pages/404";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
