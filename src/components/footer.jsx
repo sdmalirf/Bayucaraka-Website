@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import icon1 from "../assets/Vector-4.svg";
 import icon2 from "../assets/Vector-1.svg";
 import icon3 from "../assets/Vector-2.svg";
 import icon4 from "../assets/Vector-3.svg";
